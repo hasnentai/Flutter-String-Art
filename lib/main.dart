@@ -24,7 +24,6 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     _controller =
@@ -127,8 +126,6 @@ class Curves extends CustomPainter {
     for (double t = 0; t <= 1.00001; t += delta) {
       paint1Stroke.color =
           HSVColor.fromAHSV(0.5, (t * 360).roundToDouble(), 1, 1).toColor();
-
-      //canvas.drawLine(Offset(x1, y1), Offset(x2, y2), paint1Stroke);
 
       offSets.add(cubic(p0, p1, p2, p3, t, canvas, paint1Stroke));
     }
