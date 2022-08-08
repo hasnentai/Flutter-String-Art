@@ -130,7 +130,7 @@ class Curves extends CustomPainter {
       offSets.add(cubic(p0, p1, p2, p3, t, canvas, paint1Stroke));
     }
 
-    Vertices v1 = Vertices(VertexMode.triangleStrip, offSets);
+    Vertices v1 = Vertices(VertexMode.triangles, offSets);
     canvas.drawVertices(v1, BlendMode.clear, paint1Stroke);
   }
 
