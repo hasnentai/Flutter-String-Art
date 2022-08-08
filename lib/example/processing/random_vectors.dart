@@ -36,7 +36,13 @@ class MySketch extends Sketch {
     translate(x: width / 2, y: height / 2);
     strokeWeight(4.0);
     stroke(color: Color.fromARGB(22, 255, 255, 255));
-    line(const Offset(0, 0),
-        Offset(v.dx * random(-100, 100), v.dx * random(-100, 100)));
+    // line(const Offset(0, 0),
+    //     Offset(v.dx * random(-100, 100), v.dx * random(-100, 100)));
+
+    arc(
+        ellipse: Ellipse.fromCenter(
+            center: const Offset(0, 0), width: 300, height: 300),
+        startAngle: PI / 2,
+        endAngle: TWO_PI / 2);
   }
 }
