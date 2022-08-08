@@ -2,9 +2,10 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:untitled/example/processing/random_vectors.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MaterialApp(home: RandomVector()));
 }
 
 class MyApp extends StatefulWidget {
